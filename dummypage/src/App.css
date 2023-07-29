@@ -1,0 +1,39 @@
+.main {
+  height: 100%;
+  width: 100%;
+}
+.main-img {
+  /* Set the width and height of the container to match the image */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Apply the bounce animation to the image */
+.bounce {
+  animation: bounce 3s infinite;
+}
+
+h2 {
+  color: var(--main-blue, #5a74ef);
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -1.44px;
+}
+p {
+  font-family: "Inter", sans-serif;
+}
